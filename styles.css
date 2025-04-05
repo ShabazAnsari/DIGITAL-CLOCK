@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6e6e6f;
+    color: rgb(208, 223, 233);
+}
+
+.clock-container{
+    text-align: center;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    border-width: medium;
+    background: #2e2e42;
+}
+
+#Clock{
+    font-size: 5rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px white;
+}
+
+#date{
+    font-size: 5rem;
+    font-style: italic;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px white;
+}
+    
+#date {
+    transition: color 0.5s ease;
+  }
+  
+  #date:hover {
+    color: #7c99b9;
+  }
+  
+
+.controls, .alarm{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+input[type="time"],select,button{
+    padding: 8px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border-width: medium;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* .light-mode {
+    background-color: #f4f4f4;
+    color: #1e1e1e;
+  } */
+  
+  .dark-mode {
+    background-color: #1e1e2f;
+    color: #ffffff;
+  }

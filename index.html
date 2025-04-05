@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Digital CLock</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="clock-container">
+            <h1 id="Clock">00:00:00 AM</h1>
+            <p id="date"></p>
+
+            <div class="controls">
+                <label>
+                    <input type="checkbox" id="formatToggle"/>
+                    24-hour Format
+                </label>
+                <label>
+                    <input type="checkbox" id="themeToggle"/>
+                    Dark Mode
+                </label>
+    
+                <select id="timeZoneSelect">
+                    <option value="local">Local Time</option>
+                    <option value="UTC">UTC</option>
+                    <option value="Asiz/Kolkata">India</option>
+                    <option value="America/New_York">New York</option>
+                    <option value="Europe/London">London</option>
+                </select>
+            </div>
+
+            <div class="alarm">
+                <input type="time" id="alarmTime"/>
+                <button onclick="setAlarm()">Set Alarm</button>
+                <p id="alarm-status"></p>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
